@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="backgroundPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.MovieThumbnailController">
+    <children>
+        <Label fx:id="movieTitleLabel" layoutX="14.0" layoutY="14.0" prefHeight="68.0" prefWidth="266.0" text="Label"
+               wrapText="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+            <font>
+                <Font name="Dosis Medium" size="20.0"/>
+            </font>
+        </Label>
+        <Label fx:id="movieGenreLabel" layoutX="14.0" layoutY="101.0" prefHeight="25.0" prefWidth="165.0" text="year"
+               wrapText="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0">
+            <font>
+                <Font name="Dosis Regular" size="20.0"/>
+            </font>
+        </Label>
+        <Label fx:id="movieRatingLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="228.0" layoutY="101.0"
+               prefHeight="25.0" prefWidth="58.0" text="rating" textAlignment="RIGHT" wrapText="true"
+               AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="45.0">
+            <font>
+                <Font name="Dosis Regular" size="20.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="265.0" layoutY="103.0" pickOnBounds="true"
+                   preserveRatio="true" smooth="false" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="15.0">
+            <image>
+                <Image url="img/star.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
