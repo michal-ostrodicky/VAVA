@@ -12,4 +12,5 @@ public class MovieDetailController {
     void getPreviousScene() {
 
     }
+
 }

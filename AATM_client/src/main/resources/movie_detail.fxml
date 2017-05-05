@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0"
             prefWidth="1400.0" style="-fx-background-color: #24262c;" stylesheets="home.fxml"
@@ -47,6 +47,73 @@
                text="Tuto pôjde názov krásneho aj dlhého filmu" textFill="WHITE" wrapText="true">
             <font>
                 <Font name="Dosis SemiBold" size="40.0"/>
+            </font>
+        </Label>
+        <Label layoutX="47.0" layoutY="286.0" text="Comedy, Drama, Historical" textFill="#e9b649"
+               AnchorPane.leftAnchor="40.0">
+            <font>
+                <Font name="Dosis Medium" size="20.0"/>
+            </font>
+        </Label>
+        <Label layoutX="47.0" layoutY="259.0" text="Žáner" textFill="WHITE" AnchorPane.leftAnchor="40.0">
+            <font>
+                <Font name="Dosis Regular" size="20.0"/>
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="356.0" text="2016" textFill="#e9b649" AnchorPane.leftAnchor="40.0">
+            <font>
+                <Font name="Dosis Medium" size="20.0"/>
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="329.0" text="Rok" textFill="WHITE" AnchorPane.leftAnchor="40.0">
+            <font>
+                <Font name="Dosis Regular" size="20.0"/>
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="401.0" text="Premiéra" textFill="WHITE" AnchorPane.leftAnchor="40.0">
+            <font>
+                <Font name="Dosis Regular" size="20.0"/>
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="428.0" text="23. apríla 2016" textFill="#e9b649" AnchorPane.leftAnchor="40.0">
+            <font>
+                <Font name="Dosis Medium" size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="627.0" layoutY="267.0" prefHeight="80.0" prefWidth="101.0" text="124"
+               textFill="#e9b649">
+            <font>
+                <Font name="Dosis Light" size="60.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="593.0" layoutY="239.0" prefHeight="27.0" prefWidth="169.0"
+               text="dĺžka v minútach" textFill="WHITE">
+            <font>
+                <Font name="Dosis Regular" size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="611.0" layoutY="370.0" prefHeight="27.0" prefWidth="133.0" text="hodnotenie"
+               textFill="WHITE">
+            <font>
+                <Font name="Dosis Regular" size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="627.0" layoutY="397.0" prefHeight="80.0" prefWidth="101.0" text="9.8"
+               textFill="#e9b649">
+            <font>
+                <Font name="Dosis Light" size="60.0"/>
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="484.0" text="Popis" textFill="WHITE" AnchorPane.leftAnchor="40.0">
+            <font>
+                <Font name="Dosis Regular" size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="TOP_LEFT" layoutX="40.0" layoutY="517.0" prefHeight="337.0" prefWidth="696.0"
+               text="Pitchfork venmo af man braid stumptown sustainable, kickstarter freegan subway tile truffaut typewriter you probably haven't heard of them. Stumptown iceland four dollar toast, occupy squid biodiesel intelligentsia hammock neutra chambray beard bespoke church-key literally. Taxidermy shoreditch marfa flannel pickled forage. Co"
+               textFill="#e9b649" wrapText="true" AnchorPane.leftAnchor="40.0">
+            <font>
+                <Font name="Dosis Medium" size="20.0"/>
             </font>
         </Label>
     </children>
