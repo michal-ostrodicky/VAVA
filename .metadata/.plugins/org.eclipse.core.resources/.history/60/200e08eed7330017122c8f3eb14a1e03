@@ -1,0 +1,14 @@
+package remotes;
+
+import javax.ejb.Remote;
+
+import model.Movie;
+
+@Remote
+public interface MovieManagerRemote {
+	
+	boolean saveMovie(Movie movie);
+	
+	String getTitle();
+
+}

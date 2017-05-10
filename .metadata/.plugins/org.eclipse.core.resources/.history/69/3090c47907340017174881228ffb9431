@@ -1,0 +1,63 @@
+package bussines;
+
+import java.util.List;
+
+import javax.ejb.EJB;
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.imageio.ImageIO;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import remotes.MovieManagerRemote;
+import model.Movie;
+
+/**
+ * Session Bean implementation class MovieManager
+ */
+@Stateless
+public class MovieManager implements MovieManagerRemote {
+
+	@PersistenceContext(unitName = "DBConnection")
+	private EntityManager entityManager;
+	
+	@EJB
+	private QRCodeWorker  qrCodeWorker;
+	 
+	
+
+	@Override
+	public boolean saveMovie(String title, int year) {
+		Movie movie = new Movie();
+		movie.setTitle(title);
+		movie.setYear(year);
+		entityManager.persist(movie);
+		return true;
+	}
+
+	@Override
+	public Movie getMovie(int id) {
+		return entityManager.find(Movie.class, id);
+	}
+
+	@Override
+	public Movie getMovie(ImageIO imageQR) {
+		int id = qrCodeWorker.getIdFromQRCode(imageQR);
+		return this.getMovie(id);
+	}
+
+	@Override
+	public List<Movie> getNewMovies() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	
+	
+    
+    
+    
+
+}

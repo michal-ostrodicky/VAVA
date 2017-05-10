@@ -1,0 +1,44 @@
+package bussines;
+
+import java.awt.image.BufferedImage;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import com.google.zxing.BinaryBitmap;
+import com.google.zxing.ReaderException;
+import com.google.zxing.Result;
+import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
+import com.google.zxing.common.HybridBinarizer;
+import com.google.zxing.qrcode.QRCodeReader;
+
+import exceptions.NotReadableImageException;
+import remotes.QRCodeWorkerRemote;
+
+/**
+ * Session Bean implementation class QRCodeWorker
+ */
+@Stateless
+@LocalBean
+public class QRCodeWorker implements QRCodeWorkerRemote {
+
+	@Override
+	public int getIdFromQRCode(BufferedImage imageQR) throws NotReadableImageException {
+		
+		// Create bitmap from buffered image
+		BinaryBitmap bitmap = new BinaryBitmap(
+				new HybridBinarizer(
+						new BufferedImageLuminanceSource(imageQR)));
+		
+		//Create reader
+		QRCodeReader reader = new QRCodeReader();
+		
+		Result result = null;
+		
+		// Decode result
+		result = reader.decode(bitmap);
+		
+		return Integer.parseInt(result.getText());
+	}
+    
+
+}

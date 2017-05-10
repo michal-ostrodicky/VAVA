@@ -1,0 +1,53 @@
+import java.util.Hashtable;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+import model.Movie;
+
+import com.sun.org.apache.xpath.internal.operations.Mod;
+
+import remotes.MovieManagerRemote;
+import remotes.UserManagerRemote;
+
+
+public class Test {
+
+	public static void main(String[] args) throws NamingException {
+	
+		Context ctx = createRemoteEjbContext("localhost", "10100");
+		UserManagerRemote userManager = (UserManagerRemote) ctx.lookup("ejb:AATM/Logic/UserManager!remotes.UserManagerRemote");
+		
+		userManager.createUser("dodo", "123456");
+		userManager.createUser("riki", "123456");
+		userManager.createUser("miki", "123456");
+		userManager.createUser("anakonda", "123456");
+		userManager.createUser("jane", "123456");		
+		userManager.createUser("onder", "123456");
+		
+			
+	}
+	
+	private static Context createRemoteEjbContext(String host, String port) throws NamingException {
+        Hashtable<Object, Object> props = new Hashtable<>();
+        props.put(Context.INITIAL_CONTEXT_FACTORY, "org.jboss.naming.remote.client.InitialContextFactory");
+        props.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
+
+        props.put("jboss.naming.client.ejb.context", false);
+        props.put("org.jboss.ejb.client.scoped.context", true);
+
+        props.put("endpoint.name", "client-endpoint");
+        props.put("remote.connectionprovider.create.options.org.xnio.Options.SSL_ENABLED", false);
+        props.put("remote.connections", "default");
+        props.put("remote.connection.default.connect.options.org.xnio.Options.SASL_POLICY_NOANONYMOUS", false);
+
+        props.put(Context.PROVIDER_URL, "http-remoting://" + host + ":" + port);
+        props.put("remote.connection.default.host", host);
+        props.put("remote.connection.default.port", port);
+
+        return new InitialContext(props);
+    }
+	
+
+}

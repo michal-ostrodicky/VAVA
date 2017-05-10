@@ -1,0 +1,8 @@
+package snippet;
+
+public class Snippet {
+	public static void main(String[] args) {
+		main\postgresql-42.0.0.jar
+	}
+}
+

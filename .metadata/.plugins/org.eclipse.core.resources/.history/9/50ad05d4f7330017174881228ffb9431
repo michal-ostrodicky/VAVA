@@ -1,0 +1,47 @@
+package bussines;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import model.User;
+import remotes.UserManagerRemote;
+
+/**
+ * Session Bean implementation class UserManager
+ */
+@Stateless
+public class UserManager implements UserManagerRemote{
+	
+	@PersistenceContext
+	private EntityManager entityManager;
+
+    /**
+     * Default constructor. 
+     */
+    public UserManager() {
+        // TODO Auto-generated constructor stub
+    }
+
+	@Override
+	public int login(String login, String password) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public User getUser(int id) {
+		return entityManager.find(User.class, id);
+	}
+
+	@Override
+	public boolean createUser(String login, String password) {	
+		User user = new User(login, password);
+		entityManager.persist(user);
+		return true;
+	}
+    
+    
+
+}

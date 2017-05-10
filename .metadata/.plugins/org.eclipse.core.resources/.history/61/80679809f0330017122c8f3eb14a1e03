@@ -1,0 +1,14 @@
+package remotes;
+
+import javax.ejb.Remote;
+import javax.imageio.ImageIO;
+
+
+@Remote
+public interface QRCodeWorkerRemote {
+
+	int getIdFromQRCode(ImageIO imageQR);
+	
+	ImageIo getQRCodeFromId(int id);
+	
+}

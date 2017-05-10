@@ -1,0 +1,30 @@
+package bussines;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.imageio.ImageIO;
+
+import com.google.zxing.BinaryBitmap;
+import com.google.zxing.LuminanceSource;
+import com.google.zxing.common.HybridBinarizer;
+
+import remotes.QRCodeWorkerRemote;
+
+/**
+ * Session Bean implementation class QRCodeWorker
+ */
+@Stateless
+@LocalBean
+public class QRCodeWorker implements QRCodeWorkerRemote {
+
+	@Override
+	public int getIdFromQRCode(ImageIO imageQR) {
+		
+		BinaryBitmap binaryMap = new BinaryBitmap(new HybridBinarizer(new RGBLuminanceSource(imageQR)));
+		
+		
+		return 0;
+	}
+    
+
+}

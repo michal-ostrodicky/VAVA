@@ -1,0 +1,20 @@
+package bussines;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class QRCodeWorker
+ */
+@Stateless
+@LocalBean
+public class QRCodeWorker {
+
+    /**
+     * Default constructor. 
+     */
+    public QRCodeWorker() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

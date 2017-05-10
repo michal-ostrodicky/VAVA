@@ -1,0 +1,23 @@
+package bussines;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.imageio.ImageIO;
+
+import remotes.QRCodeWorkerRemote;
+
+/**
+ * Session Bean implementation class QRCodeWorker
+ */
+@Stateless
+@LocalBean
+public class QRCodeWorker implements QRCodeWorkerRemote {
+
+	@Override
+	public int getIdFromQRCode(ImageIO imageQR) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+    
+
+}

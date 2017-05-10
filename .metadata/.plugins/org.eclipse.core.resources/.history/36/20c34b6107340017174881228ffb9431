@@ -1,0 +1,22 @@
+package remotes;
+
+import java.util.List;
+
+import javax.ejb.Remote;
+import javax.imageio.ImageIO;
+
+import model.Movie;
+
+@Remote
+public interface MovieManagerRemote {
+	
+	boolean saveMovie(String title, int year);
+	
+	Movie getMovie(int id);
+	
+	Movie getMovie(ImageIO imageQR);
+	
+	List<Movie> getNewMovies();
+	
+
+}

@@ -1,0 +1,35 @@
+package bussines;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.persistence.PersistenceContext;
+
+import model.Movie;
+
+/**
+ * Session Bean implementation class MovieManager
+ */
+@Stateless
+public class MovieManager implements MovieManagerRemote {
+
+	@PersistenceContext
+	private EntityManager em;
+	
+	
+    /**
+     * Default constructor. 
+     */
+    public MovieManager() {
+        // TODO Auto-generated constructor stub
+    }
+
+	@Override
+	public boolean saveMovie(Movie movie) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+    
+    
+    
+
+}

@@ -1,0 +1,18 @@
+package remotes;
+
+import javax.ejb.Remote;
+
+import model.User;
+
+
+@Remote
+public interface UserManagerRemote {
+	
+	int login(String login, String password);
+	
+	User getUser(int id);
+	
+	boolean createUser(String login, String password);
+	
+	
+}

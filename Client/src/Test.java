@@ -68,7 +68,7 @@ public class Test {
 		
 		try {
 			Movie movie = movieManager.getMovie(imageBytes);
-			System.out.println(movie.getTitle());
+			System.out.println(movie.getTitle()+"|"+movie.getDescription());
 			
 		} catch (NotReadableImageException e) {
 			System.out.println("Nepodarilo sa precitat obrazok !!");

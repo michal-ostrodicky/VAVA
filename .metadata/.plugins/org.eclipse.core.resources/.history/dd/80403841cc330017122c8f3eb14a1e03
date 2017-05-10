@@ -1,0 +1,8 @@
+package bussines;
+
+import javax.ejb.Remote;
+
+@Remote
+public interface MovieManagerRemote {
+
+}
