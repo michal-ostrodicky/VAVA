@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @NamedQueries({
 	@NamedQuery(
 	name = "findNewMovies",
-	query = "from Movie order by premiere desc"
+	query = "from Movie order by premiere asc"
 	)
 })
 

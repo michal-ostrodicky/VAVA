@@ -253,3 +253,9 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-05-10 11:13:53.700
 !MESSAGE The server "WildFly 8.0 Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_91 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-05-10 11:25:04.863
+!MESSAGE The server "WildFly 8.0 Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_91 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-05-10 11:28:50.484
+!MESSAGE The server "WildFly 8.0 Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_91 

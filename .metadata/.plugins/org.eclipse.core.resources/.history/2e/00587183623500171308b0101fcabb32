@@ -10,7 +10,6 @@ import javax.ejb.Stateless;
 import javax.imageio.ImageIO;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 
 import exceptions.NotReadableImageException;
 import remotes.MovieManagerRemote;
@@ -50,10 +49,10 @@ public class MovieManager implements MovieManagerRemote {
 
 	@Override
 	public List<Movie> getNewMovies() {
-		
+		List<Movie> movies = new ArrayList<>();
 		
 		Query newMovies = entityManager.createNamedQuery("findNewMovies", Movie.class).setMaxResults(100);
-		List<Movie> movies = newMovies.getResultList();
+		
 		
 		return movies;
 	}

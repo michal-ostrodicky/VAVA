@@ -49,7 +49,7 @@ public class Test {
 		
 		List<Movie> newMovies = movieManager.getNewMovies();
 		for(Movie movie : newMovies){
-			System.out.println(movie.getTitle() + "  |  "+movie.getPremiere().toString());
+			System.out.println(movie.getTitle());
 		}
 		
 		

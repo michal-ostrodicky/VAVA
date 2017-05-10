@@ -1,7 +1,6 @@
 package bussines;
 
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.EJB;
@@ -10,7 +9,6 @@ import javax.ejb.Stateless;
 import javax.imageio.ImageIO;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 
 import exceptions.NotReadableImageException;
 import remotes.MovieManagerRemote;
@@ -50,12 +48,8 @@ public class MovieManager implements MovieManagerRemote {
 
 	@Override
 	public List<Movie> getNewMovies() {
-		
-		
-		Query newMovies = entityManager.createNamedQuery("findNewMovies", Movie.class).setMaxResults(100);
-		List<Movie> movies = newMovies.getResultList();
-		
-		return movies;
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

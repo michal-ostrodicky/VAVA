@@ -1635,3 +1635,48 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-05-10 11:14:06.248
 !MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 11:20:49.439
+!MESSAGE Module Api published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 11:23:47.831
+!MESSAGE 1 files modified in module Logic
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 11:24:49.915
+!MESSAGE 1 files modified in module Logic
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-05-10 11:25:04.294
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2017-05-10 11:25:04.838
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-05-10 11:25:04.860
+!MESSAGE The server "WildFly 8.0 Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_91 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-05-10 11:25:05.738
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-05-10 11:25:14.777
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 11:28:27.854
+!MESSAGE Module Api published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 11:28:46.960
+!MESSAGE Module Api published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-05-10 11:28:50.008
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2017-05-10 11:28:50.464
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-05-10 11:28:50.482
+!MESSAGE The server "WildFly 8.0 Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_91 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-05-10 11:28:51.369
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-05-10 11:29:00.244
+!MESSAGE Server Startup Succeeded
