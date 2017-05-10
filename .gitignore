@@ -22,6 +22,11 @@ Api/bin/
 # Logic project
 Logic/build/
 
+# AATM EE appp
+AATM/
+
+# Client 
+Client/bin/
 
 
 # Packages #
