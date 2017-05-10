@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="controllers.LoginController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-color: #24262c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <Label fx:id="appTitleLabel" alignment="CENTER" layoutX="424.0" layoutY="271.0" prefHeight="67.0" prefWidth="553.0" text="All About That Movie" textFill="#e9b649">
+            <font>
+                <Font name="Dosis SemiBold" size="50.0" />
+            </font>
+        </Label>
+      <TextField fx:id="loginField" layoutX="595.0" layoutY="380.0" prefHeight="45.0" prefWidth="210.0" />
+      <Label fx:id="loginLabel" layoutX="595.0" layoutY="349.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Dosis Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" layoutX="595.0" layoutY="437.0" text="password" textFill="WHITE">
+         <font>
+            <Font name="Dosis Regular" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="595.0" layoutY="470.0" prefHeight="45.0" prefWidth="210.0" />
+      <JFXButton fx:id="loginButton" layoutX="595.0" layoutY="541.0" onAction="#login" prefHeight="41.0" prefWidth="210.0" style="-fx-background-color: #e9b649;" text="Login">
+                    <font>
+                        <Font name="Dosis Regular" size="20.0" />
+                    </font>
+                </JFXButton>
+      <Label fx:id="infoLabel" alignment="CENTER" layoutX="477.0" layoutY="615.0" prefHeight="27.0" prefWidth="446.0" text="Nepodarilo sa prihlasit" textFill="WHITE">
+         <font>
+            <Font name="Dosis Regular" size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

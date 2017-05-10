@@ -1,0 +1,39 @@
+package controllers;
+
+import com.jfoenix.controls.JFXButton;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
+public class ScanController {
+	
+
+    @FXML
+    private Label infoLabel;
+
+    @FXML
+    private JFXButton scanButton;
+
+    @FXML
+    private JFXButton backButton;
+
+    @FXML
+    private Label userNameLabel;
+
+    @FXML
+    private Label appTitleLabel;
+
+    @FXML
+    private Label errorLabel;
+
+    @FXML
+    void getPreviousScene() {
+
+    }
+
+    @FXML
+    void scan(ActionEvent event) {
+
+    }
+
+}

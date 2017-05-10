@@ -66,7 +66,7 @@ public class LoginController {
     
     
     @FXML
-    void intialize(){
+    void initialize(){
     	// Set texts from properties
     	Locale lang = Language.getInstance().getLanguage();
     	ResourceBundle bundle = ResourceBundle.getBundle(TEXTS_PATH, lang);

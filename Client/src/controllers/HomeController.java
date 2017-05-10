@@ -101,6 +101,8 @@ public class HomeController {
 		}
     	
     	List<Movie> newMovies = movieManager.getNewMovies();
+    	
+    	containerFlowPane.getChildren().clear();
 
 
         for (Movie movie : newMovies) {
@@ -121,22 +123,77 @@ public class HomeController {
 
     @FXML
     void showFavouriteList(ActionEvent event) {
-    	
+    	// Load GUI
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getClassLoader().getResource("fxml/favourite_list.fxml"));
+        
+        AnchorPane root = null;
+		try {
+			root = loader.load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+        FavouriteListController controller = loader.getController();
+        controller.setUser(user);
+        controller.setPrimaryStage(mainStage);
+		controller.initValues();
+
+
+        Scene scene = new Scene(root);
+        mainStage.setScene(scene);
+        mainStage.show();
     }
 
     @FXML
     void scanQRcode(ActionEvent event) {
     	
+    	// Load GUI
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getClassLoader().getResource("fxml/scanQRcode.fxml"));
+        
+        AnchorPane root = null;
+		try {
+			root = loader.load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+        ScanController controller = loader.getController();
+        controller.setUser(user);
+        controller.setPrimaryStage(mainStage);
+
+
+        Scene scene = new Scene(root);
+        mainStage.setScene(scene);
+        mainStage.show();
+    	
     }
     
     @FXML
     void setEnglish(){
-    	
+    	Language.getInstance().setLanguage(Locale.forLanguageTag("en"));
+    	initialize();
+    	try {
+			initValues();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
     
     @FXML
     void setSlovak(){
-    	
+    	Language.getInstance().setLanguage(Locale.forLanguageTag("sk"));
+    	initialize();
+    	try {
+			initValues();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
     
     
