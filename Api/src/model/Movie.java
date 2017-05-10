@@ -113,6 +113,14 @@ public class Movie implements Serializable {
 		this.description = description;
 	}
 	
+	public String getGenresAsString(){
+		String genres = "";
+		for(String g : this.getGenres()){
+			genres += g+", ";
+		}
+		return genres;
+	}
+	
 	
 	
 	

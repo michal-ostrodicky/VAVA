@@ -1,0 +1,75 @@
+package controllers;
+
+import java.util.Locale;
+import java.util.ResourceBundle;
+
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import lang.Language;
+import model.Movie;
+
+public class MovieThumbnailController {
+	
+	public static final String TEXTS_PATH = "language/texts";
+	public static final String RATING = "rating";
+	
+
+    @FXML
+    private Label movieTitleLabel;
+
+    @FXML
+    private AnchorPane backgroundPane;
+
+    @FXML
+    private Label movieRatingLabel;
+
+    @FXML
+    private Label movieGenreLabel;
+    
+    @FXML
+    private Label textRatingLabel;
+    
+    
+    private Movie movie;
+    
+    
+    
+    @FXML
+    void initialize(){
+    	// Set texts from properties
+    	Locale lang = Language.getInstance().getLanguage();
+    	ResourceBundle bundle = ResourceBundle.getBundle(TEXTS_PATH, lang);
+    	textRatingLabel.setText(bundle.getString(RATING));
+    	
+    	// Initialize Double click handler and action
+    	backgroundPane.setOnMouseClicked(new EventHandler<MouseEvent>() {
+
+    	    @Override
+    	    public void handle(MouseEvent click) {
+    	        if (click.getClickCount() == 2) {
+    	           showMovieDetail(movie);
+    	        }
+    	    }
+    	});
+    }
+    
+    
+    private void showMovieDetail(Movie movie){
+    	
+    }
+
+
+    public void initValues() {
+        movieTitleLabel.setText(movie.getTitle());
+        movieGenreLabel.setText(movie.getGenresAsString());
+        movieRatingLabel.setText(movie.getRating().toString());
+    }
+    
+    public void setMovie(Movie movie){
+    	this.movie = movie;
+    }
+
+}

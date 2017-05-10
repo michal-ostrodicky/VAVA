@@ -1680,3 +1680,85 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-05-10 11:29:00.244
 !MESSAGE Server Startup Succeeded
+!SESSION 2017-05-10 11:34:36.393 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data E:\RISKO\SKOLA\IV semester\VAVA\GIT MISO\VAVA -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 14:02:59.027
+!MESSAGE 4 files modified in module AATM
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 14:02:59.057
+!MESSAGE 5 files modified in module Logic
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 14:02:59.124
+!MESSAGE Module Api published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-05-10 14:02:59.339
+!MESSAGE The server "WildFly 8.0 Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_91 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-05-10 14:03:00.791
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-05-10 14:03:08.272
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 14:03:56.400
+!MESSAGE Module AATM published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 14:03:56.421
+!MESSAGE Module Logic published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 14:03:56.436
+!MESSAGE Module Api published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-05-10 14:04:01.368
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2017-05-10 14:04:01.937
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-05-10 14:04:01.954
+!MESSAGE The server "WildFly 8.0 Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_91 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-05-10 14:04:02.862
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-05-10 14:04:12.802
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 15:01:17.680
+!MESSAGE Module Api published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 15:01:24.276
+!MESSAGE Module Api published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 16:42:08.125
+!MESSAGE 1 files modified in module Logic
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 16:42:16.908
+!MESSAGE 1 files modified in module Logic
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 16:42:26.472
+!MESSAGE 1 files modified in module Logic
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2017-05-10 16:42:33.955
+!MESSAGE 1 files modified in module Logic
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-05-10 16:42:40.516
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2017-05-10 16:42:41.031
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-05-10 16:42:48.302
+!MESSAGE The server "WildFly 8.0 Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_91 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-05-10 16:42:49.215
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-05-10 16:42:59.754
+!MESSAGE Server Startup Succeeded

@@ -1,0 +1,17 @@
+applicationName=All About That Movie
+newFilms=New movies
+favouriteList=Favourite movies
+scanQR=Scan QR code
+genres=Genres
+premiere=Premiere Date
+description=Description
+movieLength=movie length in minutes
+rating=rating
+year=Year
+addToFavourite=Add to list of favourite movies
+back=Back
+showMore=Show more
+movieDetail=Movie details
+login=Sign in
+username=Username
+password=Password

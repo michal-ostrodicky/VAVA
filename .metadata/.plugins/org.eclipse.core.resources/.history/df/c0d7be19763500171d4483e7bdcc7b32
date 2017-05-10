@@ -1,0 +1,26 @@
+import java.util.Locale;
+
+
+public class Language {
+	
+	private Loc language;
+	
+	Language instance = null;
+	
+	
+	private Language(){
+		
+	}
+	
+	public Language getInstance(){
+		if(instance  == null){
+			instance = new Language();
+		}
+		return instance;
+	}
+	
+	
+	
+	
+	
+}

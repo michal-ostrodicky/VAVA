@@ -1,0 +1,57 @@
+package controllers;
+
+import java.util.Locale;
+import java.util.ResourceBundle;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import lang.Language;
+import model.Movie;
+
+public class MovieThumbnailController {
+	
+	public static final String TEXTS_PATH = "language/texts";
+	public static final String RATING = "rating";
+	
+
+    @FXML
+    private Label movieTitleLabel;
+
+    @FXML
+    private AnchorPane backgroundPane;
+
+    @FXML
+    private Label movieRatingLabel;
+
+    @FXML
+    private Label movieGenreLabel;
+    
+    @FXML
+    private Label textRatingLabel;
+    
+    
+    private Movie movie;
+    
+    
+    
+    @FXML
+    void initialize(){
+    	// Set texts from properties
+    	Locale lang = Language.getInstance().getLanguage();
+    	ResourceBundle bundle = ResourceBundle.getBundle(TEXTS_PATH, lang);
+    	textRatingLabel.setText(bundle.getString(RATING));
+    }
+
+
+    public void initValues() {
+        movieTitleLabel.setText(movie.getTitle());
+        movieGenreLabel.setText(movie.getGenresAsString());
+        movieRatingLabel.setText(movie.getRating().toString());
+    }
+    
+    public void setMovie(Movie movie){
+    	this.movie = movie;
+    }
+
+}

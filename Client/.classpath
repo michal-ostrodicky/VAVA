@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="src" path="etc"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Api"/>
 	<classpathentry kind="lib" path="E:/RISKO/JAVA/wildfly-10.1.0.Final/wildfly-10.1.0.Final/bin/client/jboss-client.jar"/>
 	<classpathentry kind="lib" path="E:/RISKO/JAVA/javafaker-0.13.jar"/>
 	<classpathentry kind="lib" path="E:/RISKO/JAVA/jsoup-1.10.2.jar"/>
+	<classpathentry kind="lib" path="E:/RISKO/JAVA/jfoenix-1.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

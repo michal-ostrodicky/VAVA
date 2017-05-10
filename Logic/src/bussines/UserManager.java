@@ -6,6 +6,7 @@ import javax.ejb.EJB;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
@@ -43,7 +44,13 @@ public class UserManager implements UserManagerRemote{
 		query.setParameter("login", login);
 		query.setParameter("password", password);
 		
-		int userId = (int) query.getSingleResult();
+		int userId = -1;
+		
+		try {
+			userId = (int) query.getSingleResult();
+		} catch(NoResultException e){
+			
+		}
 		
 		return userId;
 		
