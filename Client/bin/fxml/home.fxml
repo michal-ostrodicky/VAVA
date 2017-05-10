@@ -1,60 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0"
-            prefWidth="1400.0" style="-fx-background-color: #24262c;" 
-            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-color: #24262c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
     <children>
         <Label fx:id="appTitleLabel" layoutX="37.0" layoutY="23.0" text="All About That Movie" textFill="#e9b649">
             <font>
-                <Font name="Dosis SemiBold" size="30.0"/>
+                <Font name="Dosis SemiBold" size="30.0" />
             </font>
         </Label>
-        <HBox alignment="CENTER" layoutX="828.0" layoutY="34.0" spacing="15.0" AnchorPane.rightAnchor="30.0"
-              AnchorPane.topAnchor="30.0">
+        <HBox alignment="CENTER" layoutX="828.0" layoutY="34.0" spacing="15.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
             <children>
                 <Label fx:id="userNameLabel" layoutX="828.0" layoutY="39.0" text="Meno Priezvisko" textFill="WHITE">
                     <font>
-                        <Font name="Dosis Regular" size="20.0"/>
+                        <Font name="Dosis Regular" size="20.0" />
                     </font>
                 </Label>
-                <JFXButton fx:id="favouriteListButton" onAction="#showFavouriteList"
-                           style="-fx-background-color: #e9b649;" text="Môj zoznam">
+                <JFXButton fx:id="favouriteListButton" onAction="#showFavouriteList" style="-fx-background-color: #e9b649;" text="Môj zoznam">
                     <font>
-                        <Font name="Dosis Regular" size="20.0"/>
+                        <Font name="Dosis Regular" size="20.0" />
                     </font>
                 </JFXButton>
-                <JFXButton fx:id="scanQRButton" buttonType="RAISED" onAction="#showFavouriteList"
-                           style="-fx-background-color: #bb4430;" text="Skenuj QR" textFill="WHITE">
+                <JFXButton fx:id="scanQRButton" buttonType="RAISED" onAction="#showFavouriteList" style="-fx-background-color: #bb4430;" text="Skenuj QR" textFill="WHITE">
                     <font>
-                        <Font name="Dosis Medium" size="20.0"/>
+                        <Font name="Dosis Medium" size="20.0" />
                     </font>
                     <padding>
-                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
                     </padding>
                 </JFXButton>
+            <JFXButton onAction="#setSlovak" style="-fx-background-color: #ffffff;" text="SK">
+               <font>
+                  <Font name="Dosis Regular" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#setEnglish" style="-fx-background-color: #ffffff;" text="EN">
+               <font>
+                  <Font name="Dosis Regular" size="20.0" />
+               </font>
+            </JFXButton>
             </children>
         </HBox>
         <Label fx:id="newFilmsLabel" layoutX="37.0" layoutY="83.0" text="Najnovšie filmy" textFill="WHITE">
             <font>
-                <Font name="Dosis Regular" size="25.0"/>
+                <Font name="Dosis Regular" size="25.0" />
             </font>
         </Label>
-        <ScrollPane hbarPolicy="NEVER" layoutX="-4.0" layoutY="132.0" prefHeight="668.0" prefViewportHeight="687.0"
-                    prefViewportWidth="1192.0" prefWidth="1200.0" style="-fx-background-color: #24262c;"
-                    AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-                    AnchorPane.topAnchor="132.0">
+        <ScrollPane hbarPolicy="NEVER" layoutX="-4.0" layoutY="132.0" prefHeight="668.0" prefViewportHeight="687.0" prefViewportWidth="1192.0" prefWidth="1200.0" style="-fx-background-color: #24262c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="132.0">
             <content>
-                <FlowPane fx:id="containerFlowPane" hgap="20.0" layoutX="8.0" layoutY="110.0" prefHeight="766.0"
-                          prefWidth="1402.0" style="-fx-background-color: #24262c; -fx-border-color: #24262c;"
-                          vgap="20.0">
+                <FlowPane fx:id="containerFlowPane" hgap="20.0" layoutX="8.0" layoutY="110.0" prefHeight="766.0" prefWidth="1402.0" style="-fx-background-color: #24262c; -fx-border-color: #24262c;" vgap="20.0">
                     <padding>
-                        <Insets bottom="30.0" left="30.0" right="30.0"/>
+                        <Insets bottom="30.0" left="30.0" right="30.0" />
                     </padding>
                 </FlowPane>
             </content>

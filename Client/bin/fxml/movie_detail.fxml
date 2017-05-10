@@ -32,7 +32,7 @@
                 <Font name="Dosis Regular" size="25.0" />
             </font>
         </Label>
-        <JFXButton fx:id="addToFavouriteButton" layoutX="1097.0" layoutY="170.0" onAction="#addMovieToFavourites" style="-fx-background-color: #e9b649;" text="+ Pridaj do zoznamu obľúbených">
+        <JFXButton fx:id="addToFavouriteButton" alignment="CENTER_RIGHT" layoutX="1097.0" layoutY="170.0" onAction="#addMovieToFavourites" style="-fx-background-color: #e9b649;" text="+ Pridaj do zoznamu obľúbených" AnchorPane.rightAnchor="30.0">
             <font>
                 <Font name="Dosis Regular" size="20.0" />
             </font>
@@ -72,22 +72,22 @@
                 <Font name="Dosis Medium" size="20.0" />
             </font>
         </Label>
-        <Label fx:id="movieMinutesLabel" alignment="CENTER" layoutX="627.0" layoutY="267.0" prefHeight="80.0" prefWidth="101.0" text="124" textFill="#e9b649">
+        <Label fx:id="movieMinutesLabel" alignment="CENTER" layoutX="74.0" layoutY="726.0" prefHeight="80.0" prefWidth="101.0" text="124" textFill="#e9b649">
             <font>
                 <Font name="Dosis Light" size="60.0" />
             </font>
         </Label>
-        <Label fx:id="minutesLabel" alignment="CENTER" layoutX="593.0" layoutY="239.0" prefHeight="27.0" prefWidth="169.0" text="dĺžka v minútach" textFill="WHITE">
+        <Label fx:id="minutesLabel" alignment="CENTER" layoutX="40.0" layoutY="698.0" prefHeight="27.0" prefWidth="169.0" text="dĺžka v minútach" textFill="WHITE">
             <font>
                 <Font name="Dosis Regular" size="20.0" />
             </font>
         </Label>
-        <Label fx:id="ratingLabel" alignment="CENTER" layoutX="611.0" layoutY="370.0" prefHeight="27.0" prefWidth="133.0" text="hodnotenie" textFill="WHITE">
+        <Label fx:id="ratingLabel" alignment="CENTER" layoutX="255.0" layoutY="698.0" prefHeight="27.0" prefWidth="133.0" text="hodnotenie" textFill="WHITE">
             <font>
                 <Font name="Dosis Regular" size="20.0" />
             </font>
         </Label>
-        <Label fx:id="movieRatingLabel" alignment="CENTER" layoutX="627.0" layoutY="397.0" prefHeight="80.0" prefWidth="101.0" text="9.8" textFill="#e9b649">
+        <Label fx:id="movieRatingLabel" alignment="CENTER" layoutX="271.0" layoutY="725.0" prefHeight="80.0" prefWidth="101.0" text="9.8" textFill="#e9b649">
             <font>
                 <Font name="Dosis Light" size="60.0" />
             </font>
@@ -97,7 +97,7 @@
                 <Font name="Dosis Regular" size="20.0" />
             </font>
         </Label>
-        <Label fx:id="movieDescriptionLabel" alignment="TOP_LEFT" layoutX="40.0" layoutY="517.0" prefHeight="337.0" prefWidth="696.0" text="Pitchfork venmo af man braid stumptown sustainable, kickstarter freegan subway tile truffaut typewriter you probably haven't heard of them. Stumptown iceland four dollar toast, occupy squid biodiesel intelligentsia hammock neutra chambray beard bespoke church-key literally. Taxidermy shoreditch marfa flannel pickled forage. Co" textFill="#e9b649" wrapText="true" AnchorPane.leftAnchor="40.0">
+        <Label fx:id="movieDescriptionLabel" alignment="TOP_LEFT" layoutX="40.0" layoutY="517.0" prefHeight="176.0" prefWidth="696.0" text="Pitchfork venmo af man braid stumptown sustainable, kickstarter freegan subway tile truffaut typewriter you probably haven't heard of them. Stumptown iceland four dollar toast, occupy squid biodiesel intelligentsia hammock neutra chambray beard bespoke church-key literally. Taxidermy shoreditch marfa flannel pickled forage. Co" textFill="#e9b649" wrapText="true" AnchorPane.leftAnchor="40.0">
             <font>
                 <Font name="Dosis Medium" size="20.0" />
             </font>
